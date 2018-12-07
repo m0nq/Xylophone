@@ -19,8 +19,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
 
     @IBAction func notePressed(_ sender: UIButton) {
-        let selectedSoundFileName: String = soundArray[sender.tag - 1]
-        playSound(soundFile: selectedSoundFileName)
+        playSound(soundFile: soundArray[sender.tag - 1])
     }
 
     func playSound(soundFile: String) {
